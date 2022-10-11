@@ -30,4 +30,8 @@ elForm.addEventListener("submit" , function(evt){
         elResult.textContent = "Bir xil son kiritdiz!!!";
         elResult.classList.add("bg-danger");
     }
+
+    aNumber.value = "";
+    bNumber.value = "";
+    cNumber.value = "";
 })
