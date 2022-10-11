@@ -23,6 +23,9 @@ elForm.addEventListener("submit" , function(evt){
     }else if((cNumberValue > bNumberValue && cNumberValue < aNumberValue) || (cNumberValue < bNumberValue && cNumberValue > aNumberValue)){
         elResult.textContent = cNumberValue + " Middle Number";
         elResult.classList.add("bg-dark");
+    }else if((aNumberValue == bNumberValue && aNumberValue != cNumberValue) || (bNumberValue == cNumberValue && bNumberValue != aNumberValue) || (cNumberValue == aNumberValue && cNumberValue != bNumberValue)){
+        elResult.textContent = "Ikkita bir xil son kiritdiz";
+        elResult.classList.add("bg-danger");
     }else{
         elResult.textContent = "Bir xil son kiritdiz!!!";
         elResult.classList.add("bg-danger");
